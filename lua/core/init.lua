@@ -17,20 +17,32 @@ opt.cursorline = true
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 2
+opt.shiftwidth = 4
 opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
+opt.tabstop = 4
+opt.softtabstop = 4
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
-opt.mouse = "a"
+opt.mouse = ""
+
+opt.list = true
+opt.listchars = {
+  space = ' ',
+  eol = '↲',
+  tab = '» ',
+  trail = '•',
+  extends = '>',
+  precedes = '<',
+  nbsp = '␣'
+}
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.numberwidth = 2;
 opt.ruler = false
+opt.relativenumber = true
 
 -- disable nvim intro
 opt.shortmess:append "sI"
